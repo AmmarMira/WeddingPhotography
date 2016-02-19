@@ -1,0 +1,61 @@
+// NAV BAR START
+.navbar{
+	border-radius: 0;
+	height: 81px;
+	background-color: $Default;
+	margin-bottom: 0;
+
+	.navbar-nav{
+
+		.borderwrap{
+				float: none;
+				background-color: #fff;
+				margin: -30px 0;	
+				@include screen (mobile) {
+					float: left;
+					background-color: transparent;
+					margin: 0;
+				}			
+
+			li>a{
+				line-height: 80px;
+				padding: 0 29px;
+				color: $LightGray;
+				text-transform: uppercase;
+				border: 2px transparent solid;
+				padding: 7px 19px;
+				margin: 0 0;	
+				@include screen (Xdesktop) {
+				padding: 7px 44px;
+				margin: 0 8px;					
+				}
+
+				&:hover{
+					border: 2px #000 solid;
+					transition: all 0.5s ease-in;
+					text-decoration: none;
+				}
+			}
+			.active>a{
+				background-color: transparent;
+				border: 2px #000 solid;
+
+			
+
+				&:hover{
+					background-color: transparent;
+					border: 2px #000 solid;
+				}
+				&:focus{
+					background-color: transparent;
+					border: 2px #000 solid;
+				}
+			}			
+		}
+		
+	}
+
+}
+
+
+// NAV BAR END

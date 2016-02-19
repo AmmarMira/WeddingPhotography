@@ -1,0 +1,121 @@
+.contact-section{
+	height: 780px;
+	width: 100%;
+	float: left;
+
+	.contact-info{
+		background-color: $Default;
+		height: 100%;
+
+		h1{
+			font-size: 40px;
+			padding: 90px 40px;
+			text-align: left;
+			@include screen (mobile) {
+				padding: 90px 213px;
+				text-align: right;
+			}
+		}
+		ul{
+			text-align: left;
+			@include screen (mobile) {
+				position: absolute;				
+				right: 210px;
+			}
+
+			li{
+				list-style: none;
+				font-size: 16px;
+
+				a{
+					color: $LightGray;
+
+					&:hover{
+						text-decoration: none;
+						color: rgba($DarkGray,0.4);
+					}
+				}
+			}
+		}
+		.contact-area{
+			margin-top: 100px;
+
+				@include screen (mobile) {
+				margin-top: 200px;	
+				position: absolute;
+				right: 75px;		
+				}
+
+
+			input, textarea {
+				padding: 5px;
+				width: 300px;
+				font-size: 1em;
+				margin: 0px 0px 10px 0px;
+				border: 1px solid rgba(160, 160, 159, 1);
+				display: block;
+
+				&:focus{
+					outline: none;
+				}
+			}
+			textarea {
+				height: 80px;
+				resize: none;
+				min-height: 130px;
+			}
+			input.submit-button {
+				width: 100px;
+				background-color: $DarkGray;
+				color: $Default;
+				display: block;
+			}
+		}
+	}
+	.contact-bg{
+		background-image: url(../img/contact-bg.jpg);
+		background-size: cover;;
+		background-repeat: no-repeat;
+		background-position: 70% 50%;
+		height: 100%;
+	}
+}
+
+.footer{
+	height: 300px;
+	float: left;
+	width: 100%;
+
+	.footer-containt{
+		margin: 50px 0 50px 50%;
+		text-align: center;
+		float: left;
+
+		a{
+			font-size: 17px;
+			color: $Default;
+
+
+			&:hover{
+				text-decoration: none;
+			}
+
+			span.icon-ctrl{
+				font-size: 4em;
+				color: $Default;
+				margin-left: -77px;
+			}
+		}
+		p{
+			color: $LightGray;
+			font-family: sans-serif;
+			margin: 50px 0;
+
+		}
+	}
+}
+
+
+
+
+
